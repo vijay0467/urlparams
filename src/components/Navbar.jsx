@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Ensure this is included f
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-info p-4">
+    <nav className="navbar navbar-expand-lg bg-info-subtle p-4">
       <div className="container-fluid">
         {/* Logo */}
         <img 
