@@ -61,20 +61,23 @@ const Products = () => {
             </div>
 
             {/* Products Display */}
-            <div className="row gy-3 my-3 ">
+            <div className='container'> 
+            <div className="row gy-3 gx-1 ">
                 {filteredProducts.length > 0 ? (
                     filteredProducts.map((ele) => (
-                        <div className="col-sm-12 col-md-4 col-lg-4 bg-info-subtle"  key={ele.id} >
-                            <div className="card shadow p-3 bg-dark-subtle">
+                        <div className="col-sm-12 col-md-6 col-lg-3"  key={ele.id} >
+                            <div className="card  mx-auto shadow p-3 bg-dark-subtle text-center" style={{width:"300px"}}>
                                 <img src={ele.image} alt={ele.title} width={"100%"} height={"250px"} className="rounded-5" />
                                 <h3 className="card-title">{ele.title.slice(0,10)}</h3>
                                 <p className="card-text">${ele.price}</p>
                             </div>
                         </div>
+                     
                     ))
                 ) : (
                     <div className="text-center text-danger my-5">No Products Found</div>
                 )}
+            </div>
             </div>
         </div>
     );
