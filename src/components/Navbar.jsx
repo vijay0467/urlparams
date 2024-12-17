@@ -5,7 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Ensure this is included f
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-info-subtle p-4">
+    <nav className="navbar navbar-expand-lg bg-primary p-4">
       <div className="container-fluid">
         {/* Logo */}
         <img 
@@ -32,16 +32,16 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <NavLink to="/" className="nav-link">Home</NavLink>
+              <NavLink to="/" className="nav-link text-white">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/about" className="nav-link">About</NavLink>
+              <NavLink to="/about" className="nav-link text-white">About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/contact" className="nav-link">Contact</NavLink>
+              <NavLink to="/contact" className="nav-link text-white">Contact</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/products" className="nav-link">Products</NavLink>
+              <NavLink to="/products" className="nav-link text-white">Products</NavLink>
             </li>
           </ul>
           <button className='btn btn-outline-success   border-dark rounded-pill px-3' style={{ color: 'black' }}>getstarted</button>
